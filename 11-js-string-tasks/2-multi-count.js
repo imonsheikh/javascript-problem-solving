@@ -21,40 +21,62 @@
 
 
 // practice 
-function countLetter(string){
-   string =  string.toLowerCase()
+// function countLetter(string){
+//    string =  string.toLowerCase()
 
-   let count = 0;
-   for(let i=0; i<string.length; i++){
-    if(string[i] === "a"){
-        count++
-    }
-   }
+//    let count = 0;
+//    for(let i=0; i<string.length; i++){
+//     if(string[i] === "a"){
+//         count++
+//     }
+//    }
 
-   return count
-}
+//    return count
+// }
 
 
-const testString = "This is an example Str a and A or AA aa"
+// const testString = "This is an example Str a and A or AA aa"
 
-const result = countLetter(testString)
+// const result = countLetter(testString)
  
-console.log(result);
+// console.log(result);
 
 
-// method2
-function countLetter(string){
-    let count = 0;
-    for (let i=0; i<string.length; i++){
-        if(string[i] === 'a' || string[i] === 'A'){
-            count++
-        }
+// // method2
+// function countLetter(string){
+//     let count = 0;
+//     for (let i=0; i<string.length; i++){
+//         if(string[i] === 'a' || string[i] === 'A'){
+//             count++
+//         }
+//     }
+//     return count;
+// }
+
+// let testString = 'the brown fox and rahim call the police A Apple And';
+// // countLetter(testString)
+// const result = countLetter(testString)
+// console.log(result);
+
+
+
+// without function
+
+// the string  
+const string = "Javascript has Amazing features And Also So on"
+
+// Initialize a total 
+let total = 0
+
+// for loop 
+for(let i=0; i<string.length; i++){
+
+    if(string[i] === 'a' || string[i] === 'A'){
+        total++
     }
-    return count;
 }
 
-let testString = 'the brown fox and rahim call the police A Apple And';
-// countLetter(testString)
-const result = countLetter(testString)
-console.log(result);
+
+console.log("The letter 'a' is", total, "times")
+console.log(`The letter of "a" is ${total} times `)
 

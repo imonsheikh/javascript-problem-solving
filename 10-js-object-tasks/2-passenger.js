@@ -8,7 +8,11 @@ const car = {
     year: 2020
 };
 
+// method-1
 // car.passengerCapacity = 5;
+
+// method-2
 car["passengerCapacity"] = 5;
+
 
 console.log(car);

@@ -13,3 +13,6 @@ const student = {
 const show = student.physics.marks;
 
 console.log(show);
+
+// OR 
+console.log(student['physics']['marks']);

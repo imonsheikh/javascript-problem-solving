@@ -4,25 +4,25 @@
 
 
 // // // method 01 
-function replaceX(test) {
-  let str = "";
+// function replaceX(test) {
+//   let str = "";
 
-  for (let i = 0; i < test.length; i++) {
-    if (test[i] === "x") {
-    //   str += "y";
-    test[i] = 'y';
-    } else if (test[i] === "X") {
-      str = str + "Y";
-    } else {
-      str += test[i];
-    }
-  }
-  return str;
-}
+//   for (let i = 0; i < test.length; i++) {
+//     if (test[i] === "x") {
+//     //   str += "y";
+//     test[i] = 'y';
+//     } else if (test[i] === "X") {
+//       str = str + "Y";
+//     } else {
+//       str += test[i];
+//     }
+//   }
+//   return str;
+// }
 
-const result = replaceX("hello this is testing x and X ");
+// const result = replaceX("hello this is testing x and X ");
 
-console.log(result);
+// console.log(result);
 
 // // // alternative 
 // // function replaceXwithY(strr){
@@ -55,17 +55,19 @@ console.log(result);
 
 
 // // alternative 3 
-// function replaceXwithY(str) {
-//     // Check if the string contains 'x' or 'X'
-//     if (str.includes('x') || str.includes('X')) {
-//         // Replace 'x' with 'y' and 'X' with 'Y'
-//         str = str.replace(/x/g, 'y').replace(/X/g, 'Y');
-//     }
-//     return str;
-// }
+function replaceXwithY(str) {
 
-// // Example usage:
-// let myString = "This is a Sample String with an x X";
-// console.log("Original string:", myString);
-// console.log("Modified string:", replaceXwithY(myString));
+    // Check if the string contains 'x' or 'X'
+    if (str.includes('x') || str.includes('X')) {
+        // Replace 'x' with 'y' and 'X' with 'Y'
+        // str = str.replace(/x/g, 'y').replace(/X/g, 'Y');
+        str = str.replace('x', 'y').replace('X', 'Y');
+    }
+    return str;
+}
+
+// Example usage:
+let myString = "This is a Sample String with an x X";
+console.log("Original string:", myString);
+console.log("Modified string:", replaceXwithY(myString));
 

@@ -22,6 +22,7 @@ const numbers2 = [12, 98, 5, 41, 23, 78, 46];
 const evenNumbers2 = []
 
 for(let n=0; n<numbers2.length; n++ ){
+    
     if(numbers2[n] % 2 !==1){
         evenNumbers2.push(numbers2[n])
     }

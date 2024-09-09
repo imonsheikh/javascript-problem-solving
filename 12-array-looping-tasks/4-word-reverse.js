@@ -8,6 +8,6 @@
 
 const statement = 'I am a hard working person';
 
-const reverseWords = statement.split(' ').reverse().join('.')
+const reverseWords = statement.split(' ').reverse().join(' ')
 
 console.log(reverseWords);
