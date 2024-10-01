@@ -6,6 +6,7 @@
     {name: "Shobuj", age: 30, position: "Senior"}
 ]
     Your task is to display the instructor names that has the position senior using filter
+    MOdify
  */
 
 const instructor = [
